@@ -1,0 +1,31 @@
+/*header*/
+
+header.site-init{
+    background-image: url(./img/funnyCombs.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 20rem;
+    color: white;
+    text-align: center;
+}
+
+.top-section{
+    text-align: center;
+
+}
+
+
+
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+}
+
