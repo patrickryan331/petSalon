@@ -9,9 +9,11 @@
 
 <body>
     <header>
-        <header class="site-init"></header>
-        <div>
+        <header class="site-init">
+        <div class="menu-bar">
         <h1>Suds and Scrubs</h1>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure nobis, quidem enim praesentium unde cum.</p>
 
         <nav>
 
@@ -20,15 +22,57 @@
         </nav>
         </div>
     </header>
-
-
-
-
-
-
-    <div id="petNames">
-    <div id="countPets">
     
+    <main>
+        <h2>Register a new pet!</h2>
+        <div>
+            <div class="input-control">
+                <label>Name:*</label>
+                <input type="text" id="txtName">
+            </div>
+            <div class="input-control">
+                <label>Age:</label>
+                <input type="number" id="txtAge">
+            </div>
+            <div class="input-control">
+                <label>Gender:</label>
+                <input type="text" id="txtGender">
+            </div>
+            <div class="input-control">
+                <label>Animal Type:*</label>
+                <select id="txtService" >
+                    <option value="" selected disabled>-- Select an option --</option>
+                    <option value="Dog"   >Dog</option>
+                    <option value="Cat"   >Cat</option>
+                    <option value="Bird"   >Bird</option>
+                    <option value="Reptile"   >Reptile</option>
+                    <option value="Other"   >Other</option>
+                </select>
+            </div>
+            <div class="input-control">
+                <label>Breed:</label>
+                <input type="text" id="txtbreed">
+            </div>
+            <div class="input-control">
+                <label>Service:*</label>
+                <select id="txtService" >
+                    <option value="" selected disabled>-- Select an option --</option>
+                    <option value="Grooming"   >Grooming</option>
+                    <option value="Bathing"   >Bathing</option>
+                    <option value="Nail Trim"   >Nail Trim</option>
+                    <option value="Vaccines"   >Vaccines</option>
+                </select>
+            </div>
+            
+            <div class="btn-container">
+                <button class="btn btn-primary" onclick="register();">Register</button>
+            </div>
+        </div>
+
+
+</main>
+
+
     </div>
 
 
@@ -36,4 +80,16 @@
     <script src="./scripts/register.js"></script>
     
 </body>
+<!-- 
+
+<footer class="footer">
+    <div class="bar">
+        <h1>Suds and Scrubs</h1></a>
+        <nav class="allnav">
+            <A href="index.html">Home</A>
+            <a href="register.html">Register</a>
+        
+    </nav>
+    </div> -->
+</footer>
 </html>

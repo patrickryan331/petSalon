@@ -1,31 +1,122 @@
 /*header*/
 
 header.site-init{
-    background-image: url(./img/funnyCombs.jpg);
-    background-position: center;
+    padding: 5px;
+    text-align: center;
+    background-image: url(./IMG/background1jpg.jpg);
+    background-size: 350px;
+    font-family: cursive;
+    padding: 10px;
+}
+body{
+    font-family: serif;
+    background-color: aliceblue;
+}
+img{
+    max-width: 80%;
+}
+
+h1 {
+    background-color: aliceblue;
+    color: black;
+    width: 250px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2 {
+    text-align: center;
+}
+
+.allnav {
+    background-color: aliceblue;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*utilities*/
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.menu-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+.header-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+a {
+    color: black;
+}
+
+.flex-c{
+    display: flex;
+    flex-direction: row;
+
+}
+
+/*main*/
+
+.top-section {
+    text-align: center;
+}
+
+
+.services{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border:1px solid gray;
+}
+
+.main-body{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border:1px solid gray;
+    padding: 10px;
+}
+
+.top-img{
+    max-width: 60%;
+    margin-top: 2rem;
+    border:1px solid gray;
+}
+
+
+/*footer*/
+
+.footer{
     background-size: cover;
-    height: 20rem;
+    height: 100px;
     color: white;
     text-align: center;
+    bottom: 0px;
+    background-image: url(./IMG/background1jpg.jpg);
+    background-size: 350px;
+    font-family: cursive;
+    padding: 10px;
 }
-
-.top-section{
-    text-align: center;
-
-}
-
-
-
-
-h1{
-    text-align: center;
-}
-
-h2{
+.footer-menu{
+    background-position: center center;
+    background-size: cover;
+    height: 100px;
+    color: black;
     text-align: center;
 }
-
-nav{
-    text-align: center;
-}
-
