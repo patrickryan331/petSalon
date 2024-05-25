@@ -5,7 +5,7 @@ let petSalon ={               //obj
         open:"9:00 am",       //var
         close:"9:00 pm"       //var
     },
-    pets:[]                   //array
+    pets:[]                   //array - fed from line 47-49
 }
 
 //constructor
@@ -19,6 +19,20 @@ function Pet(name,age,gender,service,type,breed){
     this.breed=breed;
 }
 
+
+function isValid(aPet){
+    let validation =true;
+
+    if(aPet.name==""){
+        validation=false;
+    }
+    if(validation==false){
+        prompt = "try again"
+    }
+
+
+    return validation;
+}
 
 
 
