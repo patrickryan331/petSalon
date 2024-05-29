@@ -69,6 +69,15 @@ function register(){
     }
 }
 
+
+function deletePet(index){
+    petSalon.pets.splice(index,1);
+    displayRow();
+    displayTotalPets();
+    displayServiceCount();
+}
+
+
 function init(){
     let pet1 = new Pet("Scooby",7,"Male","Grooming","Dog","Great Dane"); //declaring obj
     let pet2 = new Pet("Scrappy",4,"Male","Grooming","Dog","Pug"); //declaring obj
@@ -80,4 +89,3 @@ function init(){
 }
 
 window.onload=init; //waiting to render html
-

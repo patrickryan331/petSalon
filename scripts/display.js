@@ -23,22 +23,22 @@
 
 function displayRow(){
     let table="";
-    const petDiv=document.getElementById("petTable");
-    console.log("displayRow is running");
+    const petTable=document.getElementById("petTable");
     for(let i=0;i<petSalon.pets.length;i++){
         let pet = petSalon.pets[i]        
-
         table+=`
-            <tr class="petTable">
+            <tr>
                 <th>${pet.name}</th>
                 <th>${pet.type}</th>
                 <th>${pet.age}</th>
                 <th>${pet.gender}</th>
                 <th>${pet.service}</th>
+                <th>${pet.breed}</th>
+                <th><button class="btn btn-danger" onclick="deletePet(${i})">Delete</button></th>
                 </tr>
             `;
     }
-    petDiv.innerHTML=table; 
+    petTable.innerHTML=table; 
 }
 
 
