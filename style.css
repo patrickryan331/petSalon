@@ -15,6 +15,16 @@ header.site-init{
     font-family: cursive;
     padding: 10px;
 }
+header.site-initRegister{
+    padding: 5px;
+    text-align: center;
+    background-image: url(./IMG/background1jpg.jpg);
+    background-size: 350px;
+    font-family: cursive;
+    padding: 10px;
+    height: 125px;
+
+}
 .header-info{
     display: flex;
     justify-content: space-around;
@@ -43,10 +53,12 @@ h2 {
 
 .allnav {
     background-color: aliceblue;
-    width: 150px;
+    width: 80px;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    display: grid;
+    font-weight: bolder;
 }
 
 .headerP{
@@ -78,6 +90,12 @@ h2 {
     justify-content: space-around;
     align-items: center;
     height: 10vh;
+}
+.menu-barRegister{
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    
 }
 .header-info{
     display: flex;
@@ -142,7 +160,12 @@ a {
     border:1px solid gray;
 }
 
-
+.price{
+    color:green;
+    font-size: larger;
+    padding: 10px;
+    font-weight: bold;
+}
 
 
 /*notifications*/
@@ -174,19 +197,41 @@ a {
 
 .footer{
     background-size: cover;
-    height: 100px;
+    height: 125px;
     color: white;
     text-align: center;
-    bottom: 0px;
     background-image: url(./IMG/background1jpg.jpg);
     background-size: 350px;
     font-family: cursive;
     padding: 10px;
 }
-.footer-menu{
-    background-position: center center;
-    background-size: cover;
-    height: 100px;
-    color: black;
-    text-align: center;
+
+.footerBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
 }
+
+
+.footerNav {
+    background-color: aliceblue;
+    font-size: larger;
+    font-weight: bolder;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    width: auto
+}
+
+.footerP{
+    color: black;
+    background-color: aliceblue;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto
+};

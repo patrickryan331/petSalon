@@ -64,6 +64,31 @@ function displayServiceCount(){
             vaccines++;
         }
     }
+    // let bathing=0;
+    // for(let i=0;i<petSalon.pets.length;i++){
+    //     let pet = petSalon.pets[i];
+    //     if(pet.service=="Bathing"){
+    //         bathing++;
+    //     }
+    // }
+    // let dog=0;
+    // for(let i=0;i<petSalon.pets.length;i++){
+    //     let pet = petSalon.pets[i];
+    //     if(pet.type=="Dog"){
+    //         dog++;
+    //     }
+    // }
+    // let cat=0;
+    // for(let i=0;i<petSalon.pets.length;i++){
+    //     let pet = petSalon.pets[i];
+    //     if(pet.type=="Cat"){
+    //         cat++;
+    //     }
+    // }
+
+
+
+
 
     document.getElementById("totalGroomings").innerHTML=grooming;
 

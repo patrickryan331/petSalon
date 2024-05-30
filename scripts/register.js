@@ -9,7 +9,7 @@ let petSalon ={               //obj
 }
 
 //constructor
-function Pet(name,age,gender,service,type,breed){
+function Pet(name,age,gender,service,type,breed,payment){
     //properties = parameter;
     this.name=name;
     this.age=age;
@@ -17,6 +17,7 @@ function Pet(name,age,gender,service,type,breed){
     this.service=service;
     this.type=type; 
     this.breed=breed;
+    this.payment=payment;
 }
 
 
@@ -47,6 +48,10 @@ function isValid(aPet){
         validation=false;
     document.getElementById("txtAge").classList.add("alert-error");
     }
+    if(aPet.payment==""){
+        validation=false;
+    document.getElementById("txtPayment").classList.add("alert-error");
+    }
     return validation;
 }
 
@@ -59,8 +64,9 @@ function register(){
     let inputService = document.getElementById("txtService").value;
     let inputType = document.getElementById("txtType").value;
     let inputBreed = document.getElementById("txtBreed").value;
+    let inputPayment = document.getElementById("txtPayment").value;
 
-    let newPet = new Pet(inputName,inputAge,inputGender,inputService,inputBreed,inputType);
+    let newPet = new Pet(inputName,inputAge,inputGender,inputService,inputBreed,inputType,inputPayment);
     if(isValid(newPet)){
         petSalon.pets.push(newPet);
         displayRow();

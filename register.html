@@ -9,8 +9,8 @@
 </head>
 <body>
     <header>
-        <header class="site-init">
-            <div class="menu-bar">
+        <header class="site-initRegister">
+            <div class="menu-barRegister">
                 <h1>Suds and Scrubs</h1>
                 <nav class="menu">
                     <A href="index.html">Home</A>
@@ -21,8 +21,9 @@
     <main>
         <h2>Register a new pet!</h2>
         <div class="form-container">
+            <p>* All Fields Required *</p>
             <div class="mb-3">
-                <label class="form-label">Name:*</label>
+                <label class="form-label">Name:</label>
                 <input class="form-control" type="text" id="txtName">
             </div>
             <div>
@@ -30,12 +31,15 @@
                 <input class="form-control" type="number" id="txtAge">
             </div>
             <div class="mb-3">
-                <label class="form-label">Gender:</label>
-                <input class="form-control" type="text" id="txtGender">
-            </div>
+                <label>Gender:</label>
+                <select class="form-select"  id="txtGender">
+                    <option value="" selected disabled>-- Select an option --</option>
+                    <option value="Male"  >Male</option>
+                    <option value="Female"   >Female</option>
+                </select>
             <div class="mb-3">
-                <label>Animal Type:*</label>
-                <select id="txtType" >
+                <label>Animal Type:</label>
+                <select class="form-select"  id="txtType" >
                     <option value="" selected disabled>-- Select an option --</option>
                     <option value="Dog"    >Dog</option>
                     <option value="Cat"    >Cat</option>
@@ -50,14 +54,20 @@
             </div>
             <div class="mb-3">
                 <label>Service:</label>
-                <select id="txtService">
+                <select class="form-select"  id="txtService">
                     <option value="" selected disabled>-- Select an option --</option>
                     <option value="Grooming"  >Grooming</option>
                     <option value="Bathing"   >Bathing</option>
                     <option value="Vaccines"  >Vaccines</option>
                 </select>
             </div>
-            
+            <div class="mb-3">
+                <label>Payment Type:</label>
+                <select class="form-select"  id="txtPayment">
+                    <option value="" selected disabled>-- Select an option --</option>
+                    <option value="Cash"  >Cash</option>
+                    <option value="Credit"   >Credit</option>
+                </select>
             <div class="btn-container">
                 <button class="btn btn-primary" onclick="register();">Register</button>
             </div>
@@ -74,6 +84,9 @@
         <p>Total Pets = <span id="total">1000</span></p>
         <p>Grooming = <span id="totalGroomings">1000</span></p>
         <p>Vaccines = <span id="totalVaccines">1000</span></p>
+        <!-- <p>Bathing = <span id="totalBathing">1000</span></p>
+        <p>Dogs = <span id="totalDog">1000</span></p>
+        <p>Cats = <span id="totalCat">1000</span></p> -->
     </div>
 
 
@@ -102,4 +115,18 @@
     <script src="./scripts/display.js"></script>
     
 </body>
+
+
+<footer class="footer">
+    <div class="footerBar">
+        <h1>Suds and Scrubs</h1></a>
+        <nav class="footerNav">
+            <A href="index.html">Home</A>
+            <a href="register.html">Register</a>            
+    </nav>
+    <p class="footerP">Copywrite © 2024 </p>
+    <p class="footerP">Powered by GoDaddy </p>
+    </div>
+</footer>
+
 </html>
