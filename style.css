@@ -69,8 +69,8 @@ h2 {
 /* form */
 
 .form-container{
-    background-color: white;
-
+    background-color: rgb(231, 231, 231);
+    padding: 20px ;
     width: 60%;
     margin: 1rem auto;
     border-radius: 1rem;
@@ -130,6 +130,14 @@ a {
 
 }
 
+.form-select{
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.btn-container{
+    padding: 15px;
+}
 /*main*/
 
 .top-section {
