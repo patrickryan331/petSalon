@@ -14,6 +14,7 @@ header.site-init{
     background-size: 350px;
     font-family: cursive;
     padding: 10px;
+    border: 2px solid gray;
 }
 header.site-initRegister{
     padding: 5px;
@@ -23,7 +24,7 @@ header.site-initRegister{
     font-family: cursive;
     padding: 10px;
     height: 175px;
-
+    border: 2px solid gray;
 }
 .header-info{
     display: flex;
@@ -49,6 +50,9 @@ h1 {
 }
 h2 {
     text-align: center;
+    margin-top: 2rem;
+
+
 }
 
 .allnav {
@@ -59,6 +63,7 @@ h2 {
     margin-right: auto;
     display: grid;
     font-weight: bolder;
+    font-size: larger;
 }
 
 .headerP{
@@ -74,6 +79,15 @@ h2 {
     width: 60%;
     margin: 1rem auto;
     border-radius: 1rem;
+    margin-bottom: 3rem;
+}
+.form-containerServices{
+    background-color: rgb(231, 231, 231);
+    padding: 20px ;
+    width: 60%;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    margin-bottom: 10rem;
 }
 
 /*utilities*/
@@ -113,6 +127,7 @@ h2 {
     border-left: 1px solid black;
     padding-right: 1rem;
     padding-left: 1rem;
+    font-size: larger;
 }
 
 .menu a:hover{
@@ -144,37 +159,62 @@ a {
     text-align: center;
 }
 
+.indexInfo{
+    font-size: larger;
+    padding: 30px;
+    text-align: left;
+    margin-left: 35px;
+
+}
+
 
 .services{
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    padding: 2rem;
     text-align: center;
     background-color: rgb(255, 255, 255);
-    border:1px solid gray;
+    border:2px solid gray;
 }
 
 .main-body{
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    margin-top: 2rem;
     text-align: center;
     background-color: rgb(255, 255, 255);
-    border:1px solid gray;
+    border:2px solid gray;
     padding: 10px;
+    font-size: large;
 }
 
 .top-img{
     max-width: 60%;
     margin-top: 2rem;
-    border:1px solid gray;
+    border:2px solid gray;
 }
 
 .price{
     color:green;
     font-size: larger;
-    padding: 10px;
+
     font-weight: bold;
+
 }
 
+.indexImg{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid gray;
+}
+.indexImg2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 90% ;
+    border: 2px solid gray;
+}
 
 /*notifications*/
 
@@ -212,6 +252,7 @@ a {
     background-size: 350px;
     font-family: cursive;
     padding: 10px;
+    border: 2px solid gray;
 }
 
 .footerBar{

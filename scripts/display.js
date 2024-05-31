@@ -64,33 +64,40 @@ function displayServiceCount(){
             vaccines++;
         }
     }
-    // let bathing=0;
-    // for(let i=0;i<petSalon.pets.length;i++){
-    //     let pet = petSalon.pets[i];
-    //     if(pet.service=="Bathing"){
-    //         bathing++;
-    //     }
-    // }
-    // let dog=0;
-    // for(let i=0;i<petSalon.pets.length;i++){
-    //     let pet = petSalon.pets[i];
-    //     if(pet.type=="Dog"){
-    //         dog++;
-    //     }
-    // }
-    // let cat=0;
-    // for(let i=0;i<petSalon.pets.length;i++){
-    //     let pet = petSalon.pets[i];
-    //     if(pet.type=="Cat"){
-    //         cat++;
-    //     }
-    // }
-
-
-
+    let bathing=0;
+    for(let i=0;i<petSalon.pets.length;i++){
+        let pet = petSalon.pets[i];
+        if(pet.service=="Bathing"){
+            bathing++;
+        }
+    }
+    let dog=0;
+    for(let i=0;i<petSalon.pets.length;i++){
+        let pet = petSalon.pets[i];
+        if(pet.type=="Dog"){
+            dog++;
+        }
+    }
+    let cat=0;
+    for(let i=0;i<petSalon.pets.length;i++){
+        let pet = petSalon.pets[i];
+        if(pet.type=="Cat"){
+            cat++;
+        }
+    }
+    let other=0;
+    for(let i=0;i<petSalon.pets.length;i++){
+        let pet = petSalon.pets[i];
+        if(pet.type=="Other"){
+            other++;
+        }
+    }
 
 
     document.getElementById("totalGroomings").innerHTML=grooming;
-
     document.getElementById("totalVaccines").innerHTML=vaccines;
+    document.getElementById("totalBathing").innerHTML=bathing;
+    document.getElementById("totalDog").innerHTML=dog;
+    document.getElementById("totalCat").innerHTML=cat;
+    document.getElementById("totalOther").innerHTML=other;
 }

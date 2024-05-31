@@ -1,9 +1,9 @@
 let petSalon ={               //obj
-    name:"The Pet Store",     //var
-    phone: "1231231234",      //var
+    name:"Suds and Scrubs",     //var
+    phone: "203 555 1234",      //var
     hours:{
         open:"9:00 am",       //var
-        close:"9:00 pm"       //var
+        close:"5:00 pm"       //var
     },
     pets:[]                   //array
 }
