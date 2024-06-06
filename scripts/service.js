@@ -1,4 +1,4 @@
-// Use JQuery
+
 let petSalon ={               //obj
     name:"Suds and Scrubs",     //var
     phone: "203 555 1234",      //var
@@ -6,7 +6,7 @@ let petSalon ={               //obj
         open:"9:00 am",       //var
         close:"5:00 pm"       //var
     },
-    pets:[]                   //array
+    services:[]                   //array
 }
 
 
@@ -33,6 +33,24 @@ function isValid(service){
 }
 
 
+function displayNewServiceRow(){
+    let table="";
+    const serviceTable=document.getElementById("newServiceTable");
+    for(let i=0;i<petSalon.service.length;i++){
+        let pet = petSalon.service[i]        
+        table+=`
+            <tr>
+                <th>${pet.description}</th>
+                <th>${pet.price}</th>
+                <th><button class="btn btn-danger" onclick="deleteService(${i})">Delete</button></th>
+                </tr>
+            `;
+    }
+    serviceTable.innerHTML=table;
+}
+
+
+
 function register(){
     console.log("Adding a new service");
 
@@ -46,42 +64,30 @@ function register(){
         console.log(newService);
         $("input").val("");
         }
-        if (isValid(newService.description)){
-            petSalon.service.push(newService);
+        if (isValid(newService)){
+            saveItem(newService);
+            $("input").val("") //this fn is under storeManger
+
+
+            petSalon.services.push(newService);
             displayNewServiceRow();
         }
     }
 
 
     function deleteService(index){
-        service.pets.splice(index,1);
+        petSalon.services.splice(index,1);
         displayNewServiceRow();
     }
     
 
-        function displayNewServiceRow(){
-            let table="";
-            const serviceTable=document.getElementById("newServiceTable");
-            for(let i=0;i<petSalon.service.length;i++){
-                let pet = petSalon.service[i]        
-                table+=`
-                    <tr>
-                        <th>${pet.description}</th>
-                        <th>${pet.price}</th>
-                        <th><button class="btn btn-danger" onclick="deleteService(${i})">Delete</button></th>
-                        </tr>
-                    `;
-            }
-            serviceTable.innerHTML=table;
-        }
-    
 
 
         function init(){
             let newService1 = new Service("Nail Trim",20); //declaring obj
             let newService2 = new Service("Dental Clean",100); //declaring obj
-            petSalon.service.push(newService1);
-            petSalon.service.push(newService2);
+            petSalon.services.push(newService1);
+            petSalon.services.push(newService2);
             displayNewServiceRow();
         }
 
