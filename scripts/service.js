@@ -33,22 +33,9 @@ function isValid(service){
 }
 
 
-function displayNewServiceRow(){
-    let table="";
-    const serviceTable=document.getElementById("newServiceTable");
-    for(let i=0;i<petSalon.service.length;i++){
-        let pet = petSalon.service[i]        
-        table+=`
-            <tr>
-                <th>${pet.description}</th>
-                <th>${pet.price}</th>
-                <th><button class="btn btn-danger" onclick="deleteService(${i})">Delete</button></th>
-                </tr>
-            `;
-    }
-    serviceTable.innerHTML=table;
+function displayTotalServices(){
+    document.getElementById("total").innerHTML=petSalon.services.length;
 }
-
 
 
 function register(){
@@ -71,6 +58,7 @@ function register(){
 
             petSalon.services.push(newService);
             displayNewServiceRow();
+            displayTotalServices();
         }
     }
 
@@ -78,6 +66,7 @@ function register(){
     function deleteService(index){
         petSalon.services.splice(index,1);
         displayNewServiceRow();
+        displayTotalServices();
     }
     
 
@@ -85,15 +74,30 @@ function register(){
 
         function init(){
             let newService1 = new Service("Nail Trim",20); //declaring obj
-            let newService2 = new Service("Dental Clean",100); //declaring obj
+            let newService2 = new Service("Dental Clean",75); //declaring obj
             petSalon.services.push(newService1);
             petSalon.services.push(newService2);
             displayNewServiceRow();
+            displayTotalServices();
         }
 
 
-
-
+        function displayNewServiceRow(){
+            let table="";
+            const serviceTable=document.getElementById("newServiceTable");
+            for(let i=0;i<petSalon.services.length;i++){
+                let service = petSalon.services[i]        
+                table+=`
+                    <tr>
+                        <th>${service.description}</th>
+                        <th>${service.price}</th>
+                        <th><button class="btn btn-danger" onclick="deleteService(${i})">Delete</button></th>
+                        </tr>
+                    `;
+            }
+            serviceTable.innerHTML=table;
+        }
+        
 
 
         window.onload=init;  //waiting to render html

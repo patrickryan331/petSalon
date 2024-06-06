@@ -199,9 +199,8 @@ a {
 .price{
     color:green;
     font-size: larger;
-
+    text-align: bottom;
     font-weight: bold;
-
 }
 
 .indexImg{
