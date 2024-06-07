@@ -1,4 +1,4 @@
-let petSalon ={               //obj
+let petSalon ={               //object litteral
     name:"Suds and Scrubs",     //var
     phone: "203 555 1234",      //var
     hours:{
@@ -84,6 +84,21 @@ function deletePet(index){
 }
 
 
+function getServices(){
+    //read the local storage to get the services
+    let serviceList = readItems();
+    // let option = "";
+    let option ="";
+        //travel the array of services
+    for(let i=0;i<serviceList.length;i++){
+        //create the <option> on the HTML
+        option=`<option value="${serviceList[i].description}"> ${serviceList[i].description} </option>`;
+        //insert the <option> into the HTML select
+            $("#txtService").append(option);
+    }
+}
+
+
 function init(){
     let pet1 = new Pet("Scooby",7,"Male","Grooming","Dog","Great Dane"); //declaring obj
     let pet2 = new Pet("Scrappy",4,"Male","Grooming","Dog","Pug"); //declaring obj
@@ -92,6 +107,7 @@ function init(){
     displayRow();
     displayTotalPets();
     displayServiceCount();
+    getServices();
 }
 
 window.onload=init; //waiting to render html

@@ -63,6 +63,8 @@ function register(){
     }
 
 
+
+
     function deleteService(index){
         petSalon.services.splice(index,1);
         displayNewServiceRow();
@@ -90,7 +92,7 @@ function register(){
                 table+=`
                     <tr>
                         <th>${service.description}</th>
-                        <th>${service.price}</th>
+                        <th>$${service.price}</th>
                         <th><button class="btn btn-danger" onclick="deleteService(${i})">Delete</button></th>
                         </tr>
                     `;
