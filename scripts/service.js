@@ -59,6 +59,7 @@ function register(){
             petSalon.services.push(newService);
             displayNewServiceRow();
             displayTotalServices();
+            getServices()
         }
     }
 
@@ -69,6 +70,7 @@ function register(){
         petSalon.services.splice(index,1);
         displayNewServiceRow();
         displayTotalServices();
+        getServices()
     }
     
 
@@ -81,6 +83,7 @@ function register(){
             petSalon.services.push(newService2);
             displayNewServiceRow();
             displayTotalServices();
+            getServices()
         }
 
 
