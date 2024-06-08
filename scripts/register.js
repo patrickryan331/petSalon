@@ -105,7 +105,7 @@ function init(){
     petSalon.pets.push(pet1);
     petSalon.pets.push(pet2);
     displayRow();
-    displayTotalPets();
+    // displayTotalPets();
     displayServiceCount();
     getServices();
 }
