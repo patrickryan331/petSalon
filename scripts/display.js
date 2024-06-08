@@ -24,9 +24,9 @@ function displayRow(){
 
 
 
-function displayTotalPets(){
-    document.getElementById("total").innerHTML=petSalon.pets.length;
-}
+// function displayTotalPets(){
+//     document.getElementById("total").innerHTML=petSalon.pets.length;
+// }
 
 function displayServiceCount(){
     let grooming=0;
@@ -73,10 +73,10 @@ function displayServiceCount(){
     }
 
 
-    document.getElementById("totalGroomings").innerHTML=grooming;
-    document.getElementById("totalVaccines").innerHTML=vaccines;
-    document.getElementById("totalBathing").innerHTML=bathing;
-    document.getElementById("totalDog").innerHTML=dog;
-    document.getElementById("totalCat").innerHTML=cat;
-    document.getElementById("totalOther").innerHTML=other;
+    // document.getElementById("totalGroomings").innerHTML=grooming;
+    // document.getElementById("totalVaccines").innerHTML=vaccines;
+    // document.getElementById("totalBathing").innerHTML=bathing;
+    // // document.getElementById("totalDog").innerHTML=dog;
+    // document.getElementById("totalCat").innerHTML=cat;
+    // document.getElementById("totalOther").innerHTML=other;
 }
